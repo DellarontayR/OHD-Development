@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Organic Harvest Digital</title>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Official OHD website" />
+    <meta name="author" content="Dellarontay Readus" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <div id="root">   </div>
+
+    <script type="text/babel">
+    
+        class NavBar extends React.Component{
+            render(){
+                return (
+                    <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+                        <div className="container">
+                            <i className="fas fa-leaf"></i> &ensp;
+                            <a className="navbar-brand js-scroll-trigger" href="#page-top">OHD</a>
+
+                            
+                            <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                                Menu
+                                <i className="fas fa-bars"></i>   
+                                
+                                
+                            </button>
+                            <div>
+                                <a className="mx-2" href="https://twitter.com/home"><i className="fab fa-twitter"></i></a>
+                                <a className="mx-2" href="https://www.facebook.com/Organic-Harvest-Digital-185758333096937"><i className="fab fa-facebook-f"></i></a>
+                                <a className="mx-2" href="https://www.instagram.com/organic.harvest/"><i className="fab fa-instagram"></i></a>
+                            </div>
+                            <div className="collapse navbar-collapse" id="navbarResponsive">
+                                
+                                <ul className="navbar-nav ml-auto">
+                                    <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#about">About</a></li>
+                                    <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#projects">Product</a></li>
+                                    <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                );
+            }
+        }
+
+        class MastHead extends React.Component{
+            render(){
+                return(
+                    <header className="masthead">
+                        <div className="container d-flex h-100 align-items-center">
+                            <div className="mx-auto text-center">
+                                <h1 className="mx-auto my-0 text-uppercase"></h1>
+                            </div>
+                        </div>
+                    </header>
+                );
+            }
+        }
+
+        class About extends React.Component{
+            render(){
+                return(
+                    <section className="about-section text-center" id="about">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-8 mx-auto">
+                                    <h4 className = "text-white mb-4"> Organic Problems Require Organic Solutions!</h4>
+                                    <h2 className="text-white mb-4">We Are </h2>
+                                    <p className="text-white-50">
+                                        Organic Harvests Digital (OHD)- an environment action and community reinvestment organization. 
+                                        We focus on adapting climate hardware and internet of things (IoT) technologies to solve the issues of hunger,
+                                        food sustainability, while promoting equity in farming and access to digital technologies.
+                                    </p>
+                                </div>
+                            </div>
+                            <img className="img-fluid" src="assets/img/communityed copy.jpg" alt="" />
+                        </div>
+                    </section>
+                );
+            }
+        }
+
+        class Projects extends React.Component{
+            render(){
+                return(
+                    <section className="projects-section bg-light" id="projects">
+                        <div className="container">
+                            <div className="row align-items-center no-gutters mb-4 mb-lg-5">
+                                <div className="col-xl-8 col-lg-7"><img className="img-fluid mb-3 mb-lg-0" src="assets/img/Banner01 copy.jpg" alt="" /></div>
+                                <div className="col-xl-4 col-lg-5">
+                                    <div className="featured-text text-center text-lg-left">
+                                        <h4>OHD</h4>
+                                        <hr></hr>
+                                        <p className="text-black-50 mb-0">By the end of the century, the UN expects a global population of 11.2 billion. 
+                                            As global health becomes better and mortality decreases, these factors place greater pressure onto 
+                                            cultivating land and the food production system. 
+                                        </p>
+                                        <p></p>
+                                        It becomes critical to begin a new agricultural revolution where the decarbonizing farmlands, promoting sustainability, 
+                                        and prioritizing scalability with affordability are the fundamental themes driving this development.
+                                        
+                                        <p></p>
+                                        <p>
+                                        OHD is centered on supporting climate-vulnerable communities. In helping people and communities that are in food deserts 
+                                        tracts, and who are food insecure, OHD provides an Eco-friendly, modular, agricultural system that can grow fresh, organic leafy and microgreens. 
+                                        </p>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row justify-content-center no-gutters mb-5 mb-lg-0">
+                                <div className="col-lg-6"><img className="img-fluid" src="assets/img/veggies copy.jpg" alt="" /></div>
+                                <div className="col-lg-6">
+                                    <div className="bg-black text-center h-100 project">
+                                        <div className="d-flex h-100">
+                                            <div className="project-text w-100 my-auto text-center text-lg-left">
+                                                <h4 className="text-white">Leafy and Microgreens</h4>
+                                                <p className="mb-0 text-white-50">The Indoor Farming System (IFS) is a holistic food-water-energy system that is capable of
+                                                    growing fresh, organic, leafy and microgreens year-round!</p>
+                                                <hr className="d-none d-lg-block mb-0 ml-0" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row justify-content-center no-gutters">
+                                <div className="col-lg-6"><img className="img-fluid" src="assets/img/watercress.jpg" alt="" /></div>
+                                <div className="col-lg-6 order-lg-first">
+                                    <div className="bg-black text-center h-100 project">
+                                        <div className="d-flex h-100">
+                                            <div className="project-text w-100 my-auto text-center text-lg-right">
+                                                <h4 className="text-white">Community Education</h4>
+                                                <p className="mb-0 text-white-50"> OHD offers a climate, experiential program designed to create a pipeline of informed climate citizens. 
+                                                    </p>
+                                                <hr className="d-none d-lg-block mb-0 mr-0" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                );
+            }
+        }
+
+        class Signup extends React.Component{
+            render(){
+                return(
+                    <section className="signup-section" id="signup">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-md-10 col-lg-8 mx-auto text-center">
+                                    <i className="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                                    <h2 className="text-white mb-5">Let's Decarbonize the Future, Together!</h2>
+                                    <form className="form-inline d-flex">
+                                        
+                                        <a  href = "mailto:organictech@organicharvestdigital.org"  className="btn btn-primary mx-auto" >Contact Us</a>
+                                        <div className="row">
+                                            <button className="btn btn-primary mx-auto text-center">
+                                                510-470-9034 </button>
+                                        </div>
+                                
+                                    </form>
+                                </div>
+                                <div></div>
+                                <br></br>   
+                            </div>                 
+                        </div>
+                    </section>
+                );
+            }
+        }
+
+        class Contacts extends React.Component{
+            render(){
+                return(
+                    <section className="contact-section bg-black">
+                        <div className="container">
+                            <div className="row">
+                            </div>
+                            <div className="social d-flex justify-content-center">
+                                <a className="mx-2" href="https://twitter.com/home"><i className="fab fa-twitter"></i></a>
+                                <a className="mx-2" href="https://www.facebook.com/Organic-Harvest-Digital-185758333096937"><i className="fab fa-facebook-f"></i></a>
+                                <a className="mx-2" href="https://www.instagram.com/organic.harvest/"><i className="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                );
+            }
+        }
+
+   
+         class BigBody extends React.Component{
+             render(){
+
+                return(
+                    <div id="page-top">
+                        <NavBar />,
+                        <MastHead />,
+                        <About />
+                        <Projects />
+                        <Signup />
+                        <Contacts />
+
+                        <footer className="footer bg-black small text-center text-white-50"><div className="container">Copyright © 2020</div></footer>
+                        
+                    </div>
+                );
+            }
+        }
+
+        
+        ReactDOM.render(
+            <BigBody />,
+            document.getElementById('root')
+        );
+    </script>
+    <!--
+      Note: this page is a great way to try React but it's not suitable for production.
+      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+      Read this section for a production-ready setup with JSX:
+      https://reactjs.org/docs/add-react-to-a-website.html#add-jsx-to-a-project
+
+      In a larger project, you can use an integrated toolchain that includes JSX instead:
+      https://reactjs.org/docs/create-a-new-react-app.html
+
+      You can also use React without JSX, in which case you can remove Babel:
+      https://reactjs.org/docs/react-without-jsx.html
+    -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> -->
+    <!-- <script src="js/scripts.js"></script> -->
+  </body>
+</html>
