@@ -10,10 +10,10 @@
   <meta name="author" content="Dellarontay Readus" />
   <meta
   name="description"
-  content="An argi-tech company seeking to build scalable farming infrastructures and processes to enable more people to grow more of what they love."/>
+  content="Organinc Harvest Digital Inc. is an Argi-Tech company seeking to build scalable farming infrastructures and processes to enable more people to grow more of what they love."/>
 
   <meta property="og:title" content="Organic Harvest Digital AgTech Model List" />
-  <meta property="og:description" content="OHD is an Argi-Tech company seeking to build scalable farming infrastructures and processes to enable more people to grow more of what they love. " />
+  <meta property="og:description" content="Organic Harvest Digital Inc. is an AgTech company seeking to build scalable farming infrastructures and processes to enable more people to grow more of what they love. " />
   <meta property="og:image" content="www.organicharvestdigital.org/Images/IMG-4303-2.jpg" />
   <meta property="og:url" content="www.organicharvestdigital.org"/>
   <meta property="og:type" content="profile" />
@@ -23,7 +23,7 @@
   <meta property="profile:last_name" content="Readus" />
 
   <!-- Page Icon -->
-  <link rel="icon" href="Images/Color/1x/Social Media Icon.png" type="image/gif">
+  <link rel="icon" href="Images/Color/1x/Social-Media-Icon.png" type="image/x-icon">
 
 <title>OHD Inc. AgTech Model List</title>
 
