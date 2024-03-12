@@ -33,8 +33,13 @@
 
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-<!-- Core theme CSS (includes Bootstrap)-->
-<link href="css/styles.css" rel="stylesheet" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 
 <!--CSS stylesheet-->
 <!-- <link rel="stylesheet" href="style.css"> -->
@@ -43,48 +48,59 @@
 </head>
 
 <body>
-<!--  Navbar, contain dropdown hyperlinks and logo --><header><nav class="navbar">
-<div class="container-fluid">
-<div class="navbar-header"><a class="navbar-brand" href="index.html"> <img class="d-inline-block align-text-top text-white" src="Images/Color/1x/Social Media Icon.png" alt="Logo" width="30" height="24" /> </a></div>
-<button class="navbar-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> </button>
-<div id="navbarNavDropdown" class="collapse navbar-collapse">
-<ul class="navbar-nav">
-<li class="nav-item dropdown"><a class="nav-link dropdown-toggle text-center" role="button" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Organic Harvest Digital Inc </a>
-<ul id="" class="dropdown-menu text-center" style="width: 100%;">
-<li><a class="dropdown-item" href="index.html">Technology</a></li>
-<li><a class="dropdown-item" href="about.html">Innovation</a></li>
-<li><a class="dropdown-item" href="contact.html">Sustainability</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</nav></header><!--  Main, email call to action -->
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <i class="fas fa-leaf"></i> &ensp;
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">OHD</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>   
+        </button>
+        <div>
+            <a class="mx-2" href="https://twitter.com/OrganicHarvest4"><i class="fab fa-twitter"></i></a>
+            <a class="mx-2" href="https://www.facebook.com/Organic-Harvest-Digital-185758333096937"><i class="fab fa-facebook-f"></i></a>
+            <a class="mx-2" href="https://www.instagram.com/organic.harvest/"><i class="fab fa-instagram"></i></a></li>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto" style="text-align: center;">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About</a>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Product</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead" style="height:30%;">
+    <div class="container d-flex align-items-center">
+        <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase"></h1>
+            <!-- <h2 class="text-white-50 mx-auto mt-2 mb-5">.</h2> -->
+            <!-- <a class="btn btn-primary js-scroll-trigger" href="#about"></a> -->
+            <br> </br>
+        </div>
+    </div>
+</header>
 <div class="container"><form action="mail.php" method="post">
-<h2 class="form-heading">Join OHD on our Journey!</h2>
-<label class="sr-only" for="email">Email address</label> <input id="email" class="form-control" name="email" required="true" type="email" autofocus="" placeholder="Enter your Email address" /> <label class="sr-only" for="name">Name</label> <input class="form-control" required="false" type="text" autofocus="" placeholder="Name" /> <label class="sr-only" for="comment">Message to our Team</label> <textarea id="comment" class="form-control" style="height: 80px;" cols="50" name="comment" required="false" rows="4" autofocus="" placeholder="Message to our Team">Message to our Team </textarea>
-<div class="d-flex"><button class="ml-auto" style="margin: 5px;" type="submit">Send</button></div>
+<h2 class="form-heading text-center">Join OHD on our Journey!</h2>
+<label class="sr-only" for="email">Email address</label> <input id="email" class="form-control" name="email" required="true" type="email" autofocus="" placeholder="Enter your Email address" autocomplete="on" /> 
+<label class="sr-only" for="name">Name</label> <input class="form-control" id="name" required="true" name="name" type="text" autofocus="" placeholder="Name" autocomplete="on" /> 
+<label class="sr-only" for="comment">Message to our Team</label> <textarea id="comment" class="form-control" style="height: 80px;" cols="50" name="comment" required="false" rows="4" autofocus="" placeholder="Message to our Team">Message to our Team </textarea>
+<div class="d-flex"><button class="ml-auto" style="margin: 5px;" type="submit">Submit</button></div>
 </form></div>
 
 <!--  Footer, contain hyperlinked logo icons -->
-
-<footer id="footer">
-    <div class="container-fluid p-5 text-center text-white">
-        <div class="d-flex justify-content-between align-items-center">
-            <div>
-                <h2 class="h-center">Where Feeding People Matters</h2>
-                <div class="mb-4">
-                  <a href="https://twitter.com/OrganicHarvest4" role="button" class="btn btn-outline-light rounded-circle bg-white bg-opacity-10 border-0"><i class="fab fa-brands fa-twitter"></i></a>
-                  <a href="https://www.facebook.com/Organic-Harvest-Digital-185758333096937" role="button" class="btn btn-outline-light rounded-circle bg-white bg-opacity-10 border-0"><i class="fab fa-brands fa-facebook-f"></i></a>
-                  <a href="https://www.instagram.com/organic.harvest/" role="button" class="btn btn-outline-light rounded-circle bg-white bg-opacity-10 border-0"><i class="fab fa-brands fa-instagram"></i></a>
-                  <div>
-                    <span style="font-size:smaller; color: #f3bebf;">&copy;Organic Harvest Digital Inc. 2024<a class="text-white" href="#"></a><a class="text-white" href="#"></a></span>
-                  </div>
-              </div>
-                <br><br>
-            </div>
+<footer class="footer bg-black small text-center text-white-50">
+    <h2 class="h-center">Where Feeding People Matters</h2>
+    <div class="social d-flex justify-content-center">
+            <a class="mx-2" href="https://twitter.com/OrganicHarvest4"><i class="fab fa-twitter"></i></a>
+            <a class="mx-2" href="https://www.facebook.com/Organic-Harvest-Digital-185758333096937"><i class="fab fa-facebook-f"></i></a>
+            <a class="mx-2" href="https://www.instagram.com/organic.harvest/"><i class="fab fa-instagram"></i></i></a>
         </div>
-    </div>
+        <div>
+                    <span style="font-size:smaller; color: #f3bebf;">&copy;Organic Harvest Digital Inc. 2024<a class="text-white" href="#"></a><a class="text-white" href="#"></a></span>
+        </div>
 </footer>
 
 <!-- Bootstrap core JS-->
