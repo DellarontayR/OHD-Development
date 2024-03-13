@@ -1,4 +1,13 @@
-<?php include('../AgTechModels.php'); ?>
+<!-- include '../AgTechModels.php'; -->
+<?php include('../AgTechModels.php'); 
+
+session_start();
+
+$models = $_SESSION['models'];
+$name = $_SESSION['name'];
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,12 +44,12 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
   </head>
-<body>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<body id="page-top" style="padding-top:88px;" >
+        <!-- Navigation-->
+        <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg" id="mainNav">
             <div class="container">
                 <i class="fas fa-leaf"></i> &ensp;
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">OHD</a>
+                <a class="navbar-brand" style="color:black" href="#page-top">OHD</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>   
@@ -52,24 +61,48 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto" style="text-align: center;">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About</a>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Product</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black" href="about.html">About US</a>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black" href="index.html">Product</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black" href="pubmodels.php">AgTech Models</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container d-flex h-100 align-items-center">
-                <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase"></h1>
-                    <!-- <h2 class="text-white-50 mx-auto mt-2 mb-5">.</h2> -->
-                    <!-- <a class="btn btn-primary js-scroll-trigger" href="#about"></a> -->
-                    <br> </br>
-                </div>
-            </div>
-        </header>
+
+<div class="container">
+    <h3 style="padding-top:40px;">OHD Inc. AgTech Model Listing Example MVP</h3>
+    <table class="table">
+        <thead>
+        <tr id="heading">
+            <!-- <th scope="col">#</th> -->
+            <th scope="col">Model Name</th>
+            <th scope="col">Summary</th>
+            <th scope="col">Link</th>
+            <th scope="col">Technology Used</th>
+            <th scope="col">License Type</th>
+        </tr>
+        </thead>
+    <tbody>
+
+    <!-- Model Listing -->
+    <?php foreach($models as $model) {?>
+        <tr>
+                <!-- <td scope="row">#</td> -->
+                <td><?php echo htmlspecialchars($model["modelName"]); ?></td>
+                <td><?php echo htmlspecialchars($model["summary"]); ?>
+</td>
+                <td><a href="https://<?php echo htmlspecialchars($model["link"]); ?>" > <?php echo htmlspecialchars($model["link"]); ?>
+ </a></td>
+                <td><?php echo htmlspecialchars($model["technologyUsed"]); ?>
+</td>
+                <td><?php echo htmlspecialchars($model["licenseType"]); ?>
+ </td>
+        </tr>
+    <?php } ?>
+
+    </tbody>
+
+    </table>
 
 </div>
 
