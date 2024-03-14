@@ -19,10 +19,10 @@ $name = $_SESSION['name'];
   <meta name="author" content="Dellarontay Readus" />
   <meta
   name="description"
-  content="Organinc Harvest Digital Inc. is an Argi-Tech company seeking to build scalable farming infrastructures and processes to enable more people to grow more of what they love."/>
+  content="Organic Harvest Digital Inc. is excited to introduce our Machine Learning AgTech Model listing! We hope our list helps farmers, enthusiasts, and advocates to learn about the potential of the technology while providing modern tools that bring a valuable impact to everyone involved. Plant disease detection or classification, crop recommendation systems, and  rich geospatial insights for agriculture and sustainability."/>
 
-  <meta property="og:title" content="Organic Harvest Digital AgTech Model List" />
-  <meta property="og:description" content="Organic Harvest Digital Inc. is an AgTech company seeking to build scalable farming infrastructures and processes to enable more people to grow more of what they love. " />
+  <meta property="og:title" content="OHD Inc. AgTech Machine Learning Model List" />
+  <meta property="og:description" content="Organic Harvest Digital Inc. is excited to introduce our Machine Learning AgTech Model listing! We hope our list helps farmers, enthusiasts, and advocates to learn about the potential of the technology while providing modern tools that bring a valuable impact to everyone involved. Plant disease detection or classification, crop recommendation systems, and  rich geospatial insights for agriculture and sustainability. " />
   <meta property="og:image" content="www.organicharvestdigital.org/Images/IMG-4303-2.jpg" />
   <meta property="og:url" content="www.organicharvestdigital.org"/>
   <meta property="og:type" content="profile" />
@@ -32,9 +32,9 @@ $name = $_SESSION['name'];
   <meta property="profile:last_name" content="Readus" />
 
   <!-- Page Icon -->
-  <link rel="icon" href="Images/Color/1x/Social-Media-Icon.png" type="image/x-icon">
+  <link rel="icon" href="Images/Color/1x/Social-Media-Icon.png" type="image/gif">
 
-<title>OHD Inc. AgTech Model List</title>
+<title>OHD Inc. AgTech Machine Learning Model List</title>
 
             <!-- Font Awesome icons (free version)-->
             <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -49,7 +49,7 @@ $name = $_SESSION['name'];
         <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg" id="mainNav">
             <div class="container">
                 <i class="fas fa-leaf"></i> &ensp;
-                <a class="navbar-brand" style="color:black" href="#page-top">OHD</a>
+                <a class="navbar-brand" style="color:black" href="index.html">OHD</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>   
@@ -61,16 +61,16 @@ $name = $_SESSION['name'];
                 </div>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto" style="text-align: center;">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black" href="about.html">About US</a>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black" href="index.html">Product</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black" href="about.html">About Us</a>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black" href="pubmodels.php">AgTech Models</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-<div class="container">
-    <h3 style="padding-top:40px;">OHD Inc. AgTech Model Listing Example MVP</h3>
+<div class="container" style="overflow-x:auto;">
+    <h3>OHD Inc. AgTech Model Listing</h3>
     <table class="table">
         <thead>
         <tr id="heading">
@@ -91,8 +91,11 @@ $name = $_SESSION['name'];
                 <td><?php echo htmlspecialchars($model["modelName"]); ?></td>
                 <td><?php echo htmlspecialchars($model["summary"]); ?>
 </td>
-                <td><a href="https://<?php echo htmlspecialchars($model["link"]); ?>" > <?php echo htmlspecialchars($model["link"]); ?>
- </a></td>
+                <td>
+                <a href="<?php echo htmlspecialchars($model["link"]); ?>" target="_blank" > 
+                    Model Link
+                </a>
+</td>
                 <td><?php echo htmlspecialchars($model["technologyUsed"]); ?>
 </td>
                 <td><?php echo htmlspecialchars($model["licenseType"]); ?>
