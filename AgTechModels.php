@@ -21,7 +21,7 @@ $models = $_SESSION['models'];
     <meta property="og:title" content="OHD Inc. AgTech Machine Learning Model List" />
     <meta property="og:description"
         content="Organic Harvest Digital Inc. is excited to introduce our Machine Learning AgTech Model listing! We hope our list helps farmers, enthusiasts, and advocates to learn about the potential of the technology while providing modern tools that bring a valuable impact to everyone involved. Plant disease detection or classification, crop recommendation systems, and  rich geospatial insights for agriculture and sustainability. " />
-    <meta property="og:image" content="www.organicharvestdigital.org/Images/IMG-4303-2.jpg" />
+    <meta property="og:image" content="www.organicharvestdigital.org/assets/img/bg-masthead.jpg" />
     <meta property="og:url" content="www.organicharvestdigital.org" />
     <meta property="og:type" content="profile" />
     <meta name="twitter:card" content="summary_large_image" />
