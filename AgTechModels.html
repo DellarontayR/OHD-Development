@@ -1,17 +1,24 @@
-<?php include('../AgTechModels.php'); 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
 
-session_start();
-
-$models = $_SESSION['models'];
-$name = $_SESSION['name'];
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
        
+    <link rel="icon" type="image/x-icon" href="Images/Color/1x/Social-Media-Icon.png" >
+    C:\Users\dellr\OneDrive\Desktop\Github projects\OHD-Development\Images\Color\1x
+
     <meta charset="UTF-8">
      
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,7 +52,6 @@ $name = $_SESSION['name'];
 
       <!-- Page Icon -->
      
-    <link rel="icon" href="Images/Color/1x/Social-Media-Icon.png" type="image/gif">
 
     <title>OHD Inc. AgTech Machine Learning Model List</title>
 
@@ -58,6 +64,11 @@ $name = $_SESSION['name'];
         rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- <link rel="icon" href="Images/Color/1x/Social-Media-Icon.png" type="image/gif"> -->
+    <link rel="icon" href="assets/img/bg-masthead.jpg" type="image/x-icon">
+
+
      
 </head>
 
@@ -109,28 +120,7 @@ $name = $_SESSION['name'];
             <tbody>
 
                 <!-- Model Listing -->
-                <?php foreach($models as $model) {?>
-                <tr>
-                    <!-- <td scope="row">#</td> -->
-                    <td>
-                        <?php echo htmlspecialchars($model["modelName"]); ?>
-                    </td>
-                    <td>
-                        <?php echo htmlspecialchars($model["summary"]); ?>
-                    </td>
-                    <td>
-                        <a href="<?php echo htmlspecialchars($model[" link"]); ?>" target="_blank" >
-                            Model Link
-                        </a>
-                    </td>
-                    <td>
-                        <?php echo htmlspecialchars($model["technologyUsed"]); ?>
-                    </td>
-                    <td>
-                        <?php echo htmlspecialchars($model["licenseType"]); ?>
-                    </td>
-                </tr>
-                <?php } ?>
+             
 
             </tbody>
 

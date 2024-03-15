@@ -1,10 +1,7 @@
 <!-- include '../AgTechModels.php'; -->
-<?php include('../AgTechModels.php'); 
-
-session_start();
+<?php include('../AgTechModelsServer.php'); 
 
 $models = $_SESSION['models'];
-$name = $_SESSION['name'];
 
 ?>
 
@@ -32,8 +29,8 @@ $name = $_SESSION['name'];
   <meta property="profile:last_name" content="Readus" />
 
   <!-- Page Icon -->
-  <link rel="icon" href="Images/Color/1x/Social-Media-Icon.png" type="image/gif">
-
+  <link rel="icon" href="Images/Color/1x/Social-Media-Icon.png" type="image/x-icon">
+  <!-- <link rel="icon" href="Images/Color/1x/Social-Media-Icon.png" type="image/x-icon"> -->
 <title>OHD Inc. AgTech Machine Learning Model List</title>
 
             <!-- Font Awesome icons (free version)-->
