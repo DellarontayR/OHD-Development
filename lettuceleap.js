@@ -29,23 +29,23 @@ var ySpeed = .1;
 
 // Enable Cube movement with keys and front-end
 document.addEventListener("keydown", onDocumentKeyDown, false);
-document.getElementById("up").addEventListener("click",moveUp,false);
-document.getElementById("left").addEventListener("click",moveLeft,false);
-document.getElementById("down").addEventListener("click",moveDown,false);
-document.getElementById("right").addEventListener("click",moveRight,false);
+document.getElementById("up").addEventListener("mousedown",moveUp,false);
+document.getElementById("left").addEventListener("mousedown",moveLeft,false);
+document.getElementById("down").addEventListener("mousedown",moveDown,false);
+document.getElementById("right").addEventListener("mousedown",moveRight,false);
 
 function moveUp(event){
     cube.position.y += ySpeed;
 }
 
 function moveLeft(event){
-    cube.position.x += ySpeed;
+    cube.position.x -= xSpeed;
 }
 function moveDown(event){
     cube.position.y -= ySpeed;
 }
 function moveRight(event){
-    cube.position.x += ySpeed;
+    cube.position.x += xSpeed;
 }
 
 function onDocumentKeyDown(event) {
