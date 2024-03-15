@@ -24,11 +24,30 @@ function animate() {
 }
 
 // movement - please calibrate these values
-var xSpeed = 0.0001;
-var ySpeed = 0.0001;
+var xSpeed = .1;
+var ySpeed = .1;
 
-// Enable Cube movement with keys
+// Enable Cube movement with keys and front-end
 document.addEventListener("keydown", onDocumentKeyDown, false);
+document.getElementById("up").addEventListener("click",moveUp,false);
+document.getElementById("left").addEventListener("click",moveLeft,false);
+document.getElementById("down").addEventListener("click",moveDown,false);
+document.getElementById("right").addEventListener("click",moveRight,false);
+
+function moveUp(event){
+    cube.position.y += ySpeed;
+}
+
+function moveLeft(event){
+    cube.position.x += ySpeed;
+}
+function moveDown(event){
+    cube.position.y -= ySpeed;
+}
+function moveRight(event){
+    cube.position.x += ySpeed;
+}
+
 function onDocumentKeyDown(event) {
     var keyCode = event.which;
     if (keyCode == 87) {
