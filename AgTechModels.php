@@ -63,7 +63,7 @@ $name = $_SESSION['name'];
                     <ul class="navbar-nav ml-auto" style="text-align: center;">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black" href="about.html">About Us</a>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black" href="pubmodels.php">AgTech Models</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black" href="AgTechModels.php">AgTech Models</a></li>
                     </ul>
                 </div>
             </div>
