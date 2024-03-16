@@ -44,7 +44,7 @@
             if(mysqli_query($conn,$sql)){
                 echo "<h1 class='text-center' style='font-weight: 300; line-height: 1.2;'> Thank you $name for contacting OHD!</h1>";
             }else{
-                echo "<h3 class='text-center' style='font-weight: 300; line-height: 1.2;'> It looks like here was an issue with the server, please try again later. </h3>";
+                echo "<h3 class='text-center' style='font-weight: 300; line-height: 1.2;'> It looks like there was an issue with the server, please try again later. </h3>";
             }
         }
     }
@@ -123,6 +123,8 @@
                             href="about.html">About Us</a>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black"
                             href="AgTechModels.php">AgTech Models</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black"
+                            href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>

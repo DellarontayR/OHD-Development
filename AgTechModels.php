@@ -68,13 +68,15 @@ $models = $_SESSION['models'];
                             href="about.html">About Us</a>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black"
                             href="AgTechModels.php">AgTech Models</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black"
+                        href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="container pt-4" style="overflow-x:auto;">
-        <h3>OHD Inc. AgTech Model Listing</h3>
+        <h3>AgTech Machine Learning Model Listing from OHD Inc.</h3>
         <table class="table">
             <thead>
                 <tr id="heading">
