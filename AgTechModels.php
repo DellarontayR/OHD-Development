@@ -134,7 +134,7 @@ $models = $_SESSION['models'];
             <a class="mx-2" href="https://www.instagram.com/organic.harvest/"><i class="fab fa-instagram"></i></i></a>
         </div>
         <div>
-            <span style="font-size:smaller; color: #f3bebf;">&copy;Organic Harvest Digital Inc. 2024<a
+            <span style="font-size:smaller; color: #f3bebf;">&copy;Organic Harvest Digital Inc. 2021 - 2024<a
                     class="text-white" href="#"></a><a class="text-white" href="#"></a></span>
         </div>
     </footer>
