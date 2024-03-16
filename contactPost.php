@@ -1,3 +1,58 @@
+<?php include('../contactPostServer.php'); 
+
+?>
+
+<?php
+
+    if(isset($_POST['submit'])){
+        $name = $email =$company = $comment = '';
+        // Check name
+        if(empty($_POST['name'])){
+            $errors["name"] = "A name is required <br />";
+        }
+        {
+            $name = $_POST['email'];
+        }
+
+        // Check Email
+        if(empty($_POST['email'])){
+            $errors["email"] = "An email is required <br />";
+        }
+        {
+            $email = $_POST['email'];
+            if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
+                $error["email"] ="Email must be a valid email address";
+            }
+        }
+
+        // Error and result handling
+        if(array_filter($errors)){
+            echo "<h1 class='text-center' style='font-weight: 300; line-height: 1.2;'>" .  print_r($errors, true) . "</h1>";
+        }else{
+            $name = htmlspecialchars($_POST['name']);
+            $email = htmlspecialchars($_POST['email']);
+            $company = htmlspecialchars($_POST['company']);
+            $comment = htmlspecialchars($_POST['comment']);
+
+            $name = mysqli_real_escape_string($conn,$name);
+            $email = mysqli_real_escape_string($conn,$email);
+            $company = mysqli_real_escape_string($conn,$company);
+            $comment = mysqli_real_escape_string($conn,$comment);
+
+            $sql = "INSERT INTO contactUsEmails(name,email,company,comment) VALUES('$name','$email', '$company', '$comment')";
+
+            if(mysqli_query($conn,$sql)){
+                echo "<h1 class='text-center' style='font-weight: 300; line-height: 1.2;'> Thank you $name for contacting OHD!</h1>";
+            }else{
+                echo "<h3 class='text-center' style='font-weight: 300; line-height: 1.2;'> It looks like here was an issue with the server, please try again later. </h3>";
+            }
+        }
+    }
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -81,32 +136,28 @@
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
-
-
-
     <div class="container pt-4 pb-4">
         <h1 class="text-center" style="font-weight: 300; line-height: 1.2;">Contact the OHD Team
         </h1>
         <form action="contactPost.php" method="POST">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input class="form-control" id="name" name="name" required>
+                <input class="form-control" id="name"  value="<?php echo $name ?>" disabled>
             </div>
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" required>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" value="<?php echo $email ?>" disabled>
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
             </div>
             <div class="form-group">
                 <label for="company">Company or Organization</label>
-                <input class="form-control" id="company" name="company">
+                <input class="form-control" id="company" value="<?php echo $company ?>" disabled>
             </div>
             <div class="form-group">
                 <label for="comment">Message to our Team</label>
-                <textarea class="form-control" id="comment" name="comment"></textarea>
+                <textarea class="form-control" id="comment" disabled> <?php echo $comment ?></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" id="submit" name="submit" value="submit">Submit</button>
         </form>
     </div>
 

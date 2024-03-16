@@ -1,4 +1,3 @@
-<!-- include '../AgTechModels.php'; -->
 <?php include('../AgTechModelsServer.php'); 
 
 $models = $_SESSION['models'];
@@ -74,7 +73,7 @@ $models = $_SESSION['models'];
         </div>
     </nav>
 
-    <div class="container" style="overflow-x:auto;">
+    <div class="container pt-4" style="overflow-x:auto;">
         <h3>OHD Inc. AgTech Model Listing</h3>
         <table class="table">
             <thead>
