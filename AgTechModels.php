@@ -69,15 +69,21 @@ $models = $_SESSION['models'];
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black"
                             href="AgTechModels.php">AgTech Models</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black"
-                        href="contact.html">Contact Us</a></li>
+                            href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="container pt-4" style="overflow-x:auto;">
-        <h3>AgTech Machine Learning Model Listing from OHD Inc.</h3>
-        <table class="table">
+        <h3 class="text-center border-bottom" style="font-weight: 300; line-height: 1.2;">AgTech Machine Learning Model
+            Listing</h3>
+        <p>
+            Welcome! Organic Harvest Digital Inc. is excited to introduce our Machine Learning AgTech Model listing! We hope our
+            list helps farmers, enthusiasts, and advocates to learn about the potential of the technology while
+            providing modern tools that bring a valuable impact to everyone involved.
+        </p>
+        <table class="table mt-4">
             <thead>
                 <tr id="heading">
                     <!-- <th scope="col">#</th> -->
