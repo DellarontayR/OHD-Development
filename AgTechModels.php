@@ -79,7 +79,7 @@ $models = $_SESSION['models'];
         </div>
     </nav>
 
-    <div class=container pt-4>
+    <div class="container pt-2">
         <h3 class="text-center border-bottom" style="font-weight: 300; line-height: 1.2;">AgTech Machine Learning Model
                     Listing</h3>
                 <p id="subscribe">
@@ -150,6 +150,7 @@ $models = $_SESSION['models'];
 
 
     <footer class="footer bg-black small text-center text-white-50">
+        <h2 class="h-center">Where Feeding People Matter</h2>
         <div class="social d-flex justify-content-center">
             <a class="mx-2" href="https://twitter.com/OrganicHarvest4"><i class="fab fa-twitter"></i></a>
             <a class="mx-2" href="https://www.facebook.com/Organic-Harvest-Digital-185758333096937"><i
