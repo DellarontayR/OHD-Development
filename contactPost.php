@@ -130,6 +130,8 @@ $bccEmail = $_SESSION['bccEmail'];
                 <a class="mx-2" href="https://www.facebook.com/Organic-Harvest-Digital-185758333096937"><i
                         class="fab fa-facebook-f"></i></a>
                 <a class="mx-2" href="https://www.instagram.com/organic.harvest/"><i class="fab fa-instagram"></i></a>
+                <a class="mx-2" href="https://www.linkedin.com/company/organic-harvest-digital"><i class="fab fa-linkedin"></i></a>
+
                 </li>
             </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -188,6 +190,8 @@ $bccEmail = $_SESSION['bccEmail'];
             <a class="mx-2" href="https://www.facebook.com/Organic-Harvest-Digital-185758333096937"><i
                     class="fab fa-facebook-f"></i></a>
             <a class="mx-2" href="https://www.instagram.com/organic.harvest/"><i class="fab fa-instagram"></i></i></a>
+            <a class="mx-2" href="https://www.linkedin.com/company/organic-harvest-digital"><i class="fab fa-linkedin"></i></i></a>
+
         </div>
         <div>
             <span style="font-size:smaller; color: #f3bebf;">&copy;Organic Harvest Digital Inc. 2021 - 2024<a
