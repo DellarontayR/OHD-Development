@@ -144,6 +144,8 @@ $bccEmail = $_SESSION['bccEmail'];
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black"
                             href="AgTechModels.php">AgTech Models</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black"
+                            href="AgTechModels.php#subscribe">Subscribe</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" style="color:black"
                             href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
