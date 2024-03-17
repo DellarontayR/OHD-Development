@@ -48,7 +48,7 @@ $bccEmail = $_SESSION['bccEmail'];
             if(mysqli_query($conn,$sql)){
                 echo "<h1 class='text-center' style='font-weight: 300; line-height: 1.2;'> Thank you $name for contacting OHD!</h1>";
                 $headers = "From: $fromEmail" . "\r\n" . "BCC: $bccEmail" . "\r\n" . 'Content-type: text/html; charset=iso-8859-1';
-                $message = file_get_contents("emailTest.html");
+                $message = file_get_contents("emailTest2.html");
                 $message = str_replace("#name#", $name,$message);
                 mail($email,"Thank you $name for contacting OHD!",$message,$headers);
             }else{
