@@ -107,7 +107,7 @@ $models = $_SESSION['models'];
                         <?php echo htmlspecialchars($model["summary"]); ?>
                     </td>
                     <td>
-                        <a href="<?php echo htmlspecialchars($model[" link"]); ?>" target="_blank" >
+                        <a href="<?php echo htmlspecialchars($model["link"]); ?>" target="_blank">
                             Model Link
                         </a>
                     </td>

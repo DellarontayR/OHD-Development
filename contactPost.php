@@ -1,11 +1,15 @@
 <?php include('../contactPostServer.php'); 
 
+$fromEmail = $_SESSION['fromEmail'];
+$bccEmail = $_SESSION['bccEmail'];
+
 ?>
 
 <?php
 
     if(isset($_POST['submit'])){
         $name = $email =$company = $comment = '';
+        $errors = '';
         // Check name
         if(empty($_POST['name'])){
             $errors["name"] = "A name is required <br />";
@@ -43,15 +47,16 @@
 
             if(mysqli_query($conn,$sql)){
                 echo "<h1 class='text-center' style='font-weight: 300; line-height: 1.2;'> Thank you $name for contacting OHD!</h1>";
+                $headers = "From: $fromEmail" . "\r\n" . "BCC: $bccEmail" . "\r\n" . 'Content-type: text/html; charset=iso-8859-1';
+                $message = file_get_contents("emailTest.html");
+                $message = str_replace("#name#", $name,$message);
+                mail($email,"Thank you $name for contacting OHD!",$message,$headers);
             }else{
                 echo "<h3 class='text-center' style='font-weight: 300; line-height: 1.2;'> It looks like there was an issue with the server, please try again later. </h3>";
             }
         }
     }
-
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
