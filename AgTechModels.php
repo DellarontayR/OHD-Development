@@ -79,30 +79,32 @@ $models = $_SESSION['models'];
         </div>
     </nav>
 
-    <div class="container pt-4" style="overflow-x:auto;">
+    <div class=container pt-4>
         <h3 class="text-center border-bottom" style="font-weight: 300; line-height: 1.2;">AgTech Machine Learning Model
-            Listing</h3>
-        <p id="subscribe">
-            Welcome! Organic Harvest Digital Inc. is excited to introduce our Machine Learning AgTech Model listing! We hope our
-            list helps farmers, enthusiasts, and advocates to learn about the potential of the technology while
-            providing modern tools that bring a valuable impact to everyone involved.
-        </p>
+                    Listing</h3>
+                <p id="subscribe">
+                    Welcome! Organic Harvest Digital Inc. is excited to introduce our Machine Learning AgTech Model listing! We hope our
+                    list helps farmers, enthusiasts, and advocates to learn about the potential of the technology while
+                    providing modern tools that bring a valuable impact to everyone involved.
+                </p>
 
-            <!-- Subscribe -->
-    <div class="p-2">
-        <p><b>Join our newsletter:</b> Get monthly updates about AgTech and AgTech ML Models sent straight to your inbox. </p>
+                    <!-- Subscribe -->
+            <div class="p-2">
+                <p><b>Join our newsletter:</b> Get monthly updates about the AgTech industry and AgTech ML Models sent straight to your inbox. </p>
 
-        <div>
-            <form class="form-inline" action="subscribe.php" method="POST">
-                <div class="form-group mx-sm-3 mb-2">
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Your email address" name="email">
+                <div>
+                    <form class="form-inline" action="subscribe.php" method="POST">
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your email address" name="email">
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-primary mb-2 p-2">Subscribe</button>
+                    </form>
                 </div>
-                <button type="submit" name="submit" class="btn btn-primary mb-2 p-2">Subscribe</button>
-            </form>
-        </div>
-    </div>
+            </div>
+</div>
 
+    <div class="container" style="overflow-x:auto;">
         <table class="table mt-4">
             <thead>
                 <tr id="heading">

@@ -32,7 +32,6 @@ if(array_filter($errors)){
 
     if(mysqli_query($conn,$sql)){
         $message = file_get_contents("subscribeEmail.html");
-        $message = str_replace("#name#", $name,$message);
 
         $headers = "From: Organic Harvest Digital Inc. $fromEmail" . "\r\n" . "Bcc: $bccEmail" . "\r\n";
         $headers .= "Content-Type: text/html; charset=iso-8859-1 \r\n";
