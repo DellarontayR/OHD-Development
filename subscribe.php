@@ -47,10 +47,11 @@ if(array_filter($errors)){
 
 
         mail($email,"Thank you $name for subscribing to OHD!",$message,$headers);
-        echo "<p class='centered text-center'> Thank you $name for subscribing to OHD! </p>";
+        echo "<p class='centered text-center pt-2'> Thank you $name for subscribing to OHD! </p>";
         readfile("index.html");
     }else{
-        echo "<h3 class='text-center' style='font-weight: 300; line-height: 1.2;'> It looks like there was an issue with the server, please try again later. </h3>";
+        echo "<p class='centered text-center pt-2'> It looks like there was an issue with the server, please try again later. </p>";
+        readfile("index.html");
     }
 }
 }
