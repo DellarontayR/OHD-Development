@@ -46,7 +46,6 @@ $bccEmail = $_SESSION['bccEmail'];
             $sql = "INSERT INTO contactUsEmails(name,email,company,comment) VALUES('$name','$email', '$company', '$comment')";
 
             if(mysqli_query($conn,$sql)){
-                echo "<h1 class='text-center' style='font-weight: 300; line-height: 1.2;'> Thank you $name for contacting OHD!</h1>";
                 $message = file_get_contents("emailTest2.html");
                 $message = str_replace("#name#", $name,$message);
 
@@ -63,6 +62,7 @@ $bccEmail = $_SESSION['bccEmail'];
 
 
                 mail($email,"Thank you $name for contacting OHD!",$message,$headers);
+                echo "<p class='centered text-center'> Thank you $name for contacting OHD!</p>";
             }else{
                 echo "<h3 class='text-center' style='font-weight: 300; line-height: 1.2;'> It looks like there was an issue with the server, please try again later. </h3>";
             }

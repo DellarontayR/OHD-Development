@@ -85,6 +85,22 @@ $models = $_SESSION['models'];
             list helps farmers, enthusiasts, and advocates to learn about the potential of the technology while
             providing modern tools that bring a valuable impact to everyone involved.
         </p>
+
+            <!-- Subscribe -->
+    <div class="p-2" id="subscribe">
+        <p><b>Join our newsletter:</b> Get monthly updates about AgTech and AgTech ML Models sent straight to your inbox. </p>
+
+        <div>
+            <form class="form-inline" action="subscribe.php" method="POST">
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your email address" name="email">
+                </div>
+                <button type="submit" name="submit" class="btn btn-primary mb-2 p-2">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
         <table class="table mt-4">
             <thead>
                 <tr id="heading">
@@ -125,8 +141,9 @@ $models = $_SESSION['models'];
             </tbody>
 
         </table>
-
     </div>
+
+
 
     <footer class="footer bg-black small text-center text-white-50">
         <div class="social d-flex justify-content-center">
