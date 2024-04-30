@@ -116,7 +116,7 @@ $bccEmail = $_SESSION['bccEmail'];
 
 <body style="padding-top:88px;">
     <!-- Navigation-->
-    <nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg" id="mainNav">
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg" id="mainNav">
         <div class="container">
             <i class="fas fa-leaf" href="index.html"></i> &ensp;
             <a class="navbar-brand" style="color:black" href="index.html">OHD</a>
