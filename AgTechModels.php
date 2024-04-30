@@ -30,6 +30,12 @@ $models = $_SESSION['models'];
     <link rel="icon" href="Images/Color/1x/Social-Media-Icon.png" type="image/x-icon">
     <title>OHD Inc. AgTech Machine Learning Model List</title>
 
+    <link rel="canonical" href="https://www.organicharvestdigital.org/AgTechModels.php">
+    <meta property="og:url" content="https://www.organicharvestdigital.org/AgTechModels.php">
+    <meta property="og:site_name" content="OHD Inc. AgTech ML Model Listing">
+    <meta property="og:type" content="website">
+    <meta name="twitter:title" content="OHD Inc. AgTech ML Model Listing">
+
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
