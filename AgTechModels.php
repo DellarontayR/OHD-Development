@@ -166,7 +166,7 @@ $models = $_SESSION['models'];
 
         </div>
         <div>
-            <span style="font-size:smaller; color: #f3bebf;">&copy;Organic Harvest Digital Inc. 2021 - 2024<a
+            <span style="font-size:smaller; color: #f3bebf;">&copy;Organic Harvest Digital Inc. 2021 - 2026<a
                     class="text-white" href="#"></a><a class="text-white" href="#"></a></span>
         </div>
     </footer>
