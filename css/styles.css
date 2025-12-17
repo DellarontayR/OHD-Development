@@ -42,6 +42,7 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+
 *,
 *::before,
 *::after {
@@ -10342,4 +10343,9 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+/* Hides honeypot field in form submission */
+.form-control-helper {
+  display:none;
 }

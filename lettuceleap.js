@@ -1,10 +1,14 @@
 import * as THREE from 'three';
 
+// import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+// import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
+renderer.setAnimationLoop( animate );
 document.body.appendChild( renderer.domElement );
 
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
@@ -14,18 +18,24 @@ scene.add( cube );
 
 camera.position.z = 5;
 
+
+// const controls = new OrbitControls( camera, renderer.domElement );
+// const loader = new GLTFLoader();
+
 function animate() {
-	requestAnimationFrame( animate );
+	// requestAnimationFrame( animate );
 
 	cube.rotation.x += 0.01;
 	cube.rotation.y += 0.01;
 
 	renderer.render( scene, camera );
 }
+// renderer.setAnimationLoop( animate );
+
 
 // movement - please calibrate these values
-var xSpeed = .1;
-var ySpeed = .1;
+var xSpeed = .5;
+var ySpeed = .5;
 
 // Enable Cube movement with keys and front-end
 document.addEventListener("keydown", onDocumentKeyDown, false);

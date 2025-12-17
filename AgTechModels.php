@@ -103,6 +103,7 @@ $models = $_SESSION['models'];
                         <div class="form-group mx-sm-3 mb-2">
                             <label for="email" class="sr-only">Email</label>
                             <input type="email" class="form-control" id="email" placeholder="Your email address" name="email">
+                            <input class="form-control-helper" type="text" name="form-control-helper" />
                         </div>
                         <button type="submit" name="submit" class="btn btn-primary mb-2 p-2">Subscribe</button>
                     </form>
